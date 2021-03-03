@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstLineCode">
-        <activity android:name=".activity.BaseActivity"></activity>
+        <activity android:name=".activity.BaseActivity" />
         <activity android:name=".activity.NormalActivity" />
         <activity
             android:name=".activity.DialogActivity"
@@ -22,7 +22,7 @@
                 <category android:name="com.wxd.firstlinecode.my_category" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LifeCycleActivity">
+        <activity android:name=".uishow.ChatUiActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
