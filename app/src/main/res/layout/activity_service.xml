@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".service.ServiceActivity">
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start service"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stop service"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start" />
+    <Button
+        android:id="@+id/bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bind service"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stop" />
+
+    <Button
+        android:id="@+id/unbind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="unbind service"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bind" />
+
+    <Button
+        android:id="@+id/start_intent_servie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start intentService"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/unbind" />
+    <Button
+        android:id="@+id/start_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start download"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_intent_servie" />
+
+    <Button
+        android:id="@+id/pause_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pause download"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_download" />
+
+    <Button
+        android:id="@+id/cancel_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cancel download"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pause_download" />
+</androidx.constraintlayout.widget.ConstraintLayout>
