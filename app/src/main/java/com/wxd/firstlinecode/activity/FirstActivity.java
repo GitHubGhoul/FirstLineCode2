@@ -36,7 +36,11 @@ public class FirstActivity extends AppCompatActivity {
                 intent.putExtra("extra_data","Hello world");
                 startActivity(intent);*/
                 Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
-                intent.putExtra("extra_data","Hello Second");
+                //PersonParcelable parcelable = new PersonParcelable();
+                PersonSerializable parcelable = new PersonSerializable();
+                parcelable.setName("wang");
+                parcelable.setAge(20);
+                intent.putExtra("extra_data",parcelable);
                 startActivityForResult(intent,1);
                 /*Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("http://baidu.com"));

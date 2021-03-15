@@ -15,6 +15,8 @@ public class SecondActivity extends AppCompatActivity {
 
     private static final String TAG = "SecondActivity";
     private Button button1;
+    private PersonParcelable personParcelable;
+    private PersonSerializable personSerializable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +24,9 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
         Log.e(TAG, "Task id is"+getTaskId());
         Intent intent = getIntent();
-        Log.e(TAG, intent.getStringExtra("extra_data"));
+        personParcelable = intent.getParcelableExtra("extra_data");
+        personSerializable = (PersonSerializable) intent.getSerializableExtra("extra_data");
+        Log.e(TAG, personSerializable.getName());
         button1 = findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
