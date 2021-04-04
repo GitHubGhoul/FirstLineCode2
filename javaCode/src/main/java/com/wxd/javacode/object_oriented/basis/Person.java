@@ -2,8 +2,8 @@ package com.wxd.javacode.object_oriented.basis;
 
 public class Person {
 
-    protected String name;
-    protected int age;
+    public String name;
+    private int age;
 
     public static int getCount() {
         return count;
@@ -31,6 +31,10 @@ public class Person {
         this.name = name;
     }
 
+    private void setName1(String name) {
+        this.name = name;
+    }
+
     public int getAge() {
         return age;
     }
@@ -46,4 +50,9 @@ public class Person {
     final public void run(){
         System.out.println("Person.run");
     }
+
+    public void hello() {
+        System.out.println("Person:hello");
+    }
+
 }

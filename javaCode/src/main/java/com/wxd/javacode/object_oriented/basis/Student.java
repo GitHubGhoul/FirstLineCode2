@@ -2,7 +2,7 @@ package com.wxd.javacode.object_oriented.basis;
 
 public class Student extends Person{
 
-    private int score;
+    public int score;
 
     public int getScore() {
         return score;
@@ -12,12 +12,12 @@ public class Student extends Person{
         this.score = score;
     }
 
-    public String hello(){
-        return super.name;
-    }
-
     public void run(String s){
 
+    }
+
+    public void hello() {
+        System.out.println("Student:hello");
     }
 
 }
