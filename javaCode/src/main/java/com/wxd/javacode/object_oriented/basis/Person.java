@@ -1,7 +1,11 @@
 package com.wxd.javacode.object_oriented.basis;
 
+import com.wxd.javacode.annotation.Range;
+import com.wxd.javacode.annotation.Report;
+
 public class Person {
 
+    @Range(min=1, max=20)
     public String name;
     private int age;
 
