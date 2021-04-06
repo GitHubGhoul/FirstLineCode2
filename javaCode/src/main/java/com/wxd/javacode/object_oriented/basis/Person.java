@@ -3,7 +3,7 @@ package com.wxd.javacode.object_oriented.basis;
 import com.wxd.javacode.annotation.Range;
 import com.wxd.javacode.annotation.Report;
 
-public class Person {
+public class Person implements Comparable<Person>{
 
     @Range(min=1, max=20)
     public String name;
@@ -25,6 +25,11 @@ public class Person {
     }
 
     public Person() {
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
     }
 
     public String getName() {
@@ -59,4 +64,8 @@ public class Person {
         System.out.println("Person:hello");
     }
 
+    @Override
+    public int compareTo(Person o) {
+        return this.name.compareTo(o.name);
+    }
 }
