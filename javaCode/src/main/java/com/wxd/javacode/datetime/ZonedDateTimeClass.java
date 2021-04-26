@@ -1,4 +1,4 @@
-package com.wxd.javacode.datatime;
+package com.wxd.javacode.datetime;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;

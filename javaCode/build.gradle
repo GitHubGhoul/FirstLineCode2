@@ -11,4 +11,8 @@ dependencies {
     implementation files('libs/bcprov-jdk15on-168.jar')
     implementation 'javax.mail:javax.mail-api:1.6.2'
     implementation 'com.sun.mail:javax.mail:1.6.2'
+    implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.10.1"
+    implementation 'org.codehaus.woodstox:woodstox-core-asl:4.4.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.1'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.0'
 }

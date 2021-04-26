@@ -1,4 +1,4 @@
-package com.wxd.javacode.datatime;
+package com.wxd.javacode.datetime;
 
 
 import java.text.SimpleDateFormat;
@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class DataAndCalendar {
+public class DateAndCalendar {
     public static void main(String[] args) {
         // 获取当前时间:
         Date date = new Date();
